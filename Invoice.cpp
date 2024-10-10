@@ -105,7 +105,7 @@ string Invoice::toString()
 { 
     //why the first method printed garbage values ??? 
     //char buffer[200];
-    //sprintf(buffer,"%s,%d,%d,%d",getName(), getItemNum(), getPrice(),getQuantity());
+    //sprintf(buffer,"%s,%d,%lf,%d",getName(), getItemNum(), getPrice(),getQuantity());
     //return buffer; 
     ostringstream oss;
 	oss << getName() << "," << getPrice() << "," << getQuantity() << "," << getItemNum();
